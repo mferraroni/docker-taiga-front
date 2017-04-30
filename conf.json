@@ -1,5 +1,5 @@
 {
-  "api": "${API}",
+  "api": "${API_URI}",
   "eventsUrl": null,
   "debug": ${DEBUG},
   "debugInfo": false,
