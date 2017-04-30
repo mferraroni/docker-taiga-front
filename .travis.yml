@@ -5,5 +5,5 @@ services:
 
 script:
   - docker build -t taiga-front .
-  - docker run --name taigafront -e API_HOST=localhost -d taiga-front
+  - docker run --name taigafront -e API_HOST=localhost -e API_PORT=8000 -d taiga-front
   - docker exec taigafront /bin/sh -c "apt-get update && apt-get install curl -y --no-install-recommends && curl -f localhost:80"
